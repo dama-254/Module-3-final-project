@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import { getVaccinations } from "../services/vaccinationApi";
 
@@ -35,6 +36,9 @@ function Vaccinations() {
 
 export default Vaccinations;
 =======
+=======
+cat > src/pages/Vaccination.jsx << 'EOF'
+>>>>>>> 25e5c20 (done)
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchVaccinations, addVaccination, updateVaccination, deleteVaccination } from '../redux/vaccinationSlice'
@@ -90,4 +94,8 @@ export default function Vaccination() {
     </div>
   )
 }
+<<<<<<< HEAD
 >>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
+=======
+EOF
+>>>>>>> 25e5c20 (done)

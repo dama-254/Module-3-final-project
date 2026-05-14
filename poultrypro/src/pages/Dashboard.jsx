@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import { getBatches } from "../services/batchApi";
 import { getSales } from "../services/salesApi";
@@ -60,6 +61,9 @@ function Dashboard() {
 
 export default Dashboard;
 =======
+=======
+cat > src/pages/Dashboard.jsx << 'EOF'
+>>>>>>> 25e5c20 (done)
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchBatches } from '../redux/poultrySlice'
@@ -101,4 +105,8 @@ export default function Dashboard() {
     </div>
   )
 }
+<<<<<<< HEAD
 >>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
+=======
+EOF
+>>>>>>> 25e5c20 (done)
