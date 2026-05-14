@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-
-function Navbar() {
-  return (
-    <div className="bg-white shadow-md p-4 flex justify-between items-center">
-      
-      <h2 className="text-xl font-semibold text-gray-700">
-        Poultry Farm Management System
-      </h2>
-
-      <div>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg">
-          Admin
-        </button>
-      </div>
-
-    </div>
-  );
-}
-
-export default Navbar;
-=======
 import { Link, useLocation } from 'react-router-dom'
 
 const links = [
@@ -49,4 +27,3 @@ export default function Navbar() {
     </nav>
   )
 }
->>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839

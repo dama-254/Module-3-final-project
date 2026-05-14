@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-function LoadingSpinner() {
-  return (
-    <div className="flex justify-center items-center h-40">
-      <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-    </div>
-  );
-}
 
-export default LoadingSpinner;
-=======
 export default function LoadingSpinner() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '60px' }}>
@@ -17,4 +7,4 @@ export default function LoadingSpinner() {
     </div>
   )
 }
->>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
+
