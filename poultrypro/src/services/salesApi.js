@@ -1,5 +1,5 @@
 import axios from 'axios'
-const URL = 'http://localhost:3001/sales'
+const URL = 'http://localhost:3001/sa'
 export const getSales = () => axios.get(URL)
 export const createSale = (data) => axios.post(URL, data)
 export const updateSale = (id, data) => axios.patch(`${URL}/${id}`, data)
