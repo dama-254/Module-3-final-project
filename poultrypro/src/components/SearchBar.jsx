@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 function SearchBar({ search, setSearch }) {
   return (
     <input
@@ -13,6 +14,8 @@ function SearchBar({ search, setSearch }) {
 
 export default SearchBar;
 =======
+=======
+>>>>>>> ea26a2ab0958faec2ee5c81d381ed980117ae081
 export default function SearchBar({ value, onChange, placeholder }) {
   return (
     <div style={{ position: 'relative', marginBottom: '14px' }}>
@@ -27,4 +30,7 @@ export default function SearchBar({ value, onChange, placeholder }) {
     </div>
   )
 }
+<<<<<<< HEAD
 >>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
+=======
+>>>>>>> ea26a2ab0958faec2ee5c81d381ed980117ae081
