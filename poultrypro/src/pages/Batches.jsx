@@ -1,49 +1,4 @@
-<<<<<<< HEAD
 cat > src/pages/Batches.jsx << 'EOF'
-=========
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { useEffect, useState } from "react";
-import { getBatches } from "../services/batchApi";
-
-function Batches() {
-  const [batches, setBatches] = useState([]);
-
-  useEffect(() => {
-    async function load() {
-      const data = await getBatches();
-      setBatches(data);
-    }
-
-    load();
-  }, []);
-
-  return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Batches</h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {batches.map((batch) => (
-          <div
-            key={batch.id}
-            className="bg-white p-4 rounded-xl shadow hover:shadow-lg"
-          >
-            <h2 className="font-bold">{batch.batchName}</h2>
-            <p className="text-gray-600">Type: {batch.type}</p>
-            <p className="text-gray-600">Quantity: {batch.quantity}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-export default Batches;
-=======
-=======
-cat > src/pages/Batches.jsx << 'EOF'
->>>>>>> 25e5c20 (done)
->>>>>>> pages
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchBatches, addBatch, updateBatch, deleteBatch } from '../redux/poultrySlice'
@@ -120,12 +75,4 @@ export default function Batches() {
     </div>
   )
 }
-<<<<<<< HEAD
 EOF
-=======
-<<<<<<< HEAD
->>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
-=======
-EOF
->>>>>>> 25e5c20 (done)
->>>>>>> pages
