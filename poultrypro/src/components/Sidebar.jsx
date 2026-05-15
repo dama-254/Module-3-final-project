@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { NavLink } from "react-router-dom";
 
 function Sidebar() {
@@ -32,9 +30,7 @@ function Sidebar() {
 }
 
 export default Sidebar;
-=======
-=======
->>>>>>> ea26a2ab0958faec2ee5c81d381ed980117ae081
+
 import { NavLink } from 'react-router-dom'
 
 const links = [
@@ -57,7 +53,4 @@ export default function Sidebar() {
     </aside>
   )
 }
-<<<<<<< HEAD
->>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
-=======
->>>>>>> ea26a2ab0958faec2ee5c81d381ed980117ae081
+
