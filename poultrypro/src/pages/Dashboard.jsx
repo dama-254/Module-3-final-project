@@ -1,65 +1,3 @@
-<<<<<<< HEAD
-import { useEffect, useState } from "react";
-import { getBatches } from "../services/batchApi";
-import { getSales } from "../services/salesApi";
-import { getExpenses } from "../services/expenseApi";
-import { getVaccinations } from "../services/vaccinationApi";
-
-function Dashboard() {
-  const [batches, setBatches] = useState([]);
-  const [sales, setSales] = useState([]);
-  const [expenses, setExpenses] = useState([]);
-  const [vaccinations, setVaccinations] = useState([]);
-
-  useEffect(() => {
-    async function fetchData() {
-      const b = await getBatches();
-      const s = await getSales();
-      const e = await getExpenses();
-      const v = await getVaccinations();
-
-      setBatches(b);
-      setSales(s);
-      setExpenses(e);
-      setVaccinations(v);
-    }
-
-    fetchData();
-  }, []);
-
-  return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6 text-gray-700">
-        Dashboard Overview
-      </h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="bg-white p-5 rounded-2xl shadow">
-          <p className="text-gray-500">Batches</p>
-          <h2 className="text-2xl font-bold">{batches.length}</h2>
-        </div>
-
-        <div className="bg-white p-5 rounded-2xl shadow">
-          <p className="text-gray-500">Sales</p>
-          <h2 className="text-2xl font-bold">{sales.length}</h2>
-        </div>
-
-        <div className="bg-white p-5 rounded-2xl shadow">
-          <p className="text-gray-500">Expenses</p>
-          <h2 className="text-2xl font-bold">{expenses.length}</h2>
-        </div>
-
-        <div className="bg-white p-5 rounded-2xl shadow">
-          <p className="text-gray-500">Vaccinations</p>
-          <h2 className="text-2xl font-bold">{vaccinations.length}</h2>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default Dashboard;
-=======
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchBatches } from '../redux/poultrySlice'
@@ -90,8 +28,9 @@ export default function Dashboard() {
       </div>
       <div style={{ background: '#0d1f0d', border: '1px solid rgba(134,239,172,0.09)', borderRadius: '14px', padding: '16px' }}>
         <h3 style={{ fontSize: '11px', fontWeight: 600, color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>Batch Overview</h3>
-        {batches.length === 0 ? <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.25)' }}>No batches yet. Add one from the Batches page.</p> :
-          batches.map(b => (
+        {batches.length === 0
+          ? <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.25)' }}>No batches yet. Add one from the Batches page.</p>
+          : batches.map(b => (
             <div key={b.id} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
               <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.7)' }}>{b.batchId} · {b.breed}</span>
               <span style={{ fontSize: '12px', color: '#86efac' }}>{b.birds} birds</span>
@@ -101,4 +40,3 @@ export default function Dashboard() {
     </div>
   )
 }
->>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
