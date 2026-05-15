@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 cat > src/pages/Batches.jsx << 'EOF'
-=======
+
 
 import { useEffect, useState } from "react";
 import { getBatches } from "../services/batchApi";
@@ -38,7 +38,6 @@ function Batches() {
 }
 
 export default Batches;
->>>>>>> 86b2b98a427080905687c0b5e0cb3917255797b2
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchBatches, addBatch, updateBatch, deleteBatch } from '../redux/poultrySlice'
@@ -115,9 +114,5 @@ export default function Batches() {
     </div>
   )
 }
-<<<<<<< HEAD
-EOF
-=======
 
 EOF
->>>>>>> 86b2b98a427080905687c0b5e0cb3917255797b2
