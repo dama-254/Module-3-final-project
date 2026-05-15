@@ -1,40 +1,67 @@
+<<<<<<< HEAD
+import { Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+
+import Dashboard from "./pages/Dashboard";
+import Batches from "./pages/Batches";
+import FeedManagement from "./pages/FeedManagement";
+import Vaccinations from "./pages/Vaccinations";
+import Sales from "./pages/Sales";
+import Expenses from "./pages/Expenses";
+
+function App() {
+  return (
+    <div className="flex min-h-screen bg-gray-100">
+      
+      <Sidebar />
+
+      <div className="flex-1">
+        
+        <Navbar />
+
+        <div className="p-6">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/batches" element={<Batches />} />
+            <Route path="/feeds" element={<FeedManagement />} />
+            <Route path="/vaccinations" element={<Vaccinations />} />
+            <Route path="/sales" element={<Sales />} />
+            <Route path="/expenses" element={<Expenses />} />
+=======
 import { Routes, Route, Navigate } from 'react-router-dom'
-import { useSelector } from 'react-redux'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Dashboard from './pages/Dashboard'
-import Login from './pages/Login'
-import Register from './pages/Register'
-import IssuesFeed from './pages/IssuesFeed'
-import IssueDetail from './pages/IssueDetail'
-import RaiseIssue from './pages/RaiseIssue'
-import Analytics from './pages/Analytics'
-import Notifications from './pages/Notifications'
-import Users from './pages/Users'
+import Batches from './pages/Batches'
+import FeedManagement from './pages/FeedManagement'
+import Sales from './pages/Sales'
+import Expenses from './pages/Expenses'
+import Vaccination from './pages/Vaccination'
 
 export default function App() {
-  const user = useSelector(s => s.auth.user)
-
   return (
-    <div className="min-h-screen bg-[#0a0f0a] text-[#e8f5e9] flex flex-col">
+    <div style={{ minHeight: '100vh', background: '#0a0f0a', color: '#e8f5e9', display: 'flex', flexDirection: 'column' }}>
       <Navbar />
-      <div className="flex flex-1">
+      <div style={{ display: 'flex', flex: 1 }}>
         <Sidebar />
-        <main className="flex-1 p-6 overflow-auto">
+        <main style={{ flex: 1, padding: '24px', overflowY: 'auto' }}>
           <Routes>
-            <Route path="/" element={<Navigate to={user ? '/dashboard' : '/login'} />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/" element={<Navigate to="/dashboard" />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/issues" element={<IssuesFeed />} />
-            <Route path="/issues/:id" element={<IssueDetail />} />
-            <Route path="/issues/new" element={<RaiseIssue />} />
-            <Route path="/analytics" element={<Analytics />} />
-            <Route path="/notifications" element={<Notifications />} />
-            <Route path="/users" element={<Users />} />
+            <Route path="/batches" element={<Batches />} />
+            <Route path="/feed" element={<FeedManagement />} />
+            <Route path="/sales" element={<Sales />} />
+            <Route path="/expenses" element={<Expenses />} />
+            <Route path="/vaccination" element={<Vaccination />} />
+>>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
           </Routes>
-        </main>
+        </div>
+
       </div>
     </div>
-  )
+  );
 }
+
+export default App;
