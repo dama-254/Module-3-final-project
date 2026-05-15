@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+import { NavLink } from "react-router-dom";
+
+function Sidebar() {
+  return (
+    <div className="w-64 min-h-screen bg-slate-900 text-white p-5">
+      
+      <h1 className="text-2xl font-bold mb-10">
+        Poultry Farm
+      </h1>
+
+      <div className="flex flex-col gap-4">
+
+        <NavLink to="/">Dashboard</NavLink>
+
+        <NavLink to="/batches">Batches</NavLink>
+
+        <NavLink to="/feeds">Feeds</NavLink>
+
+        <NavLink to="/vaccinations">
+          Vaccinations
+        </NavLink>
+
+        <NavLink to="/sales">Sales</NavLink>
+
+        <NavLink to="/expenses">Expenses</NavLink>
+
+      </div>
+    </div>
+  );
+}
+
+export default Sidebar;
+=======
+=======
+>>>>>>> ea26a2ab0958faec2ee5c81d381ed980117ae081
 import { NavLink } from 'react-router-dom'
 
 const links = [
@@ -20,3 +57,7 @@ export default function Sidebar() {
     </aside>
   )
 }
+<<<<<<< HEAD
+>>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
+=======
+>>>>>>> ea26a2ab0958faec2ee5c81d381ed980117ae081

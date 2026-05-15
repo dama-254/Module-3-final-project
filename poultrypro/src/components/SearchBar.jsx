@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+function SearchBar({ search, setSearch }) {
+  return (
+    <input
+      type="text"
+      placeholder="Search..."
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+      className="w-full border border-gray-300 rounded-lg p-3"
+    />
+  );
+}
+
+export default SearchBar;
+=======
+=======
+>>>>>>> ea26a2ab0958faec2ee5c81d381ed980117ae081
 export default function SearchBar({ value, onChange, placeholder }) {
   return (
     <div style={{ position: 'relative', marginBottom: '14px' }}>
@@ -12,3 +30,7 @@ export default function SearchBar({ value, onChange, placeholder }) {
     </div>
   )
 }
+<<<<<<< HEAD
+>>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
+=======
+>>>>>>> ea26a2ab0958faec2ee5c81d381ed980117ae081

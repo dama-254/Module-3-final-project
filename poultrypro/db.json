@@ -29,16 +29,6 @@
       "health": "Monitor",
       "layRate": 65,
       "dateAdded": "2025-11-20"
-    },
-    {
-      "id": "4",
-      "batchId": "B-004",
-      "breed": "Broiler Cross",
-      "birds": 500,
-      "ageWeeks": 8,
-      "health": "At risk",
-      "layRate": 0,
-      "dateAdded": "2026-03-28"
     }
   ],
   "feedRecords": [
@@ -58,24 +48,6 @@
       "feedType": "Grower mash",
       "quantityKg": 125,
       "costKsh": 4375,
-      "supplier": "AgroFeed Ltd"
-    },
-    {
-      "id": "3",
-      "date": "2026-05-11",
-      "batchId": "B-003",
-      "feedType": "Layer mash",
-      "quantityKg": 100,
-      "costKsh": 4000,
-      "supplier": "FarmSupply Co"
-    },
-    {
-      "id": "4",
-      "date": "2026-05-11",
-      "batchId": "B-004",
-      "feedType": "Starter mash",
-      "quantityKg": 80,
-      "costKsh": 3600,
       "supplier": "AgroFeed Ltd"
     }
   ],
@@ -97,24 +69,52 @@
       "unitPrice": 850,
       "totalKsh": 12750,
       "buyer": "Hotel Jacaranda"
-    },
-    {
-      "id": "3",
-      "date": "2026-05-10",
-      "type": "Eggs",
-      "quantity": 500,
-      "unitPrice": 18,
-      "totalKsh": 9000,
-      "buyer": "Westlands Shop"
-    },
-    {
-      "id": "4",
-      "date": "2026-05-09",
-      "type": "Chicken",
-      "quantity": 26,
-      "unitPrice": 850,
-      "totalKsh": 22100,
-      "buyer": "Bulk Order"
     }
-  ]
+  ],
+  "expenses": [
+    {
+      "id": "1",
+      "date": "2026-05-10",
+      "description": "Layer mash purchase",
+      "category": "Feed",
+      "amount": 9600
+    },
+    {
+      "id": "2",
+      "date": "2026-05-08",
+      "description": "Newcastle vaccine",
+      "category": "Medicine",
+      "amount": 2400
+    }
+  ],
+  "vaccinations": [
+    {
+      "id": "1",
+      "date": "2026-05-01",
+      "batchId": "B-001",
+      "vaccineName": "Newcastle LaSota",
+      "dosage": "1 drop/bird",
+      "method": "Drinking water",
+      "notes": "Routine booster"
+    },
+    {
+      "id": "2",
+      "date": "2026-04-20",
+      "batchId": "B-002",
+      "vaccineName": "Marek's Disease",
+      "dosage": "0.2ml/bird",
+      "method": "Injection",
+      "notes": "Day-old chick vaccination"
+    },
+    {
+      "date": "",
+      "batchId": "B-001",
+      "vaccineName": "e.g new castle",
+      "dosage": "1 drop",
+      "method": "Injection",
+      "notes": "",
+      "id": "T63vnQDReUM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

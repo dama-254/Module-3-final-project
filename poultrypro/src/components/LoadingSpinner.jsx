@@ -1,3 +1,4 @@
+
 export default function LoadingSpinner() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '60px' }}>
