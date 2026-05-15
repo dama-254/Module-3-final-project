@@ -1,4 +1,45 @@
+<<<<<<< HEAD
 cat > src/pages/Vaccination.jsx << 'EOF'
+=======
+
+import { useEffect, useState } from "react";
+import { getVaccinations } from "../services/vaccinationApi";
+
+function Vaccinations() {
+  const [vaccinations, setVaccinations] = useState([]);
+
+  useEffect(() => {
+    async function load() {
+      const data = await getVaccinations();
+      setVaccinations(data);
+    }
+
+    load();
+  }, []);
+
+  return (
+    <div className="p-6">
+      <h1 className="text-2xl font-bold mb-4">Vaccinations</h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {vaccinations.map((v) => (
+          <div
+            key={v.id}
+            className="bg-white p-4 rounded-xl shadow"
+          >
+            <h2 className="font-bold">{v.vaccineName}</h2>
+            <p className="text-gray-600">Date: {v.date}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Vaccinations;
+cat > src/pages/Vaccination.jsx << 'EOF'
+
+>>>>>>> 86b2b98a427080905687c0b5e0cb3917255797b2
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchVaccinations, addVaccination, updateVaccination, deleteVaccination } from '../redux/vaccinationSlice'
@@ -54,4 +95,10 @@ export default function Vaccination() {
     </div>
   )
 }
+<<<<<<< HEAD
 EOF
+=======
+
+EOF
+
+>>>>>>> 86b2b98a427080905687c0b5e0cb3917255797b2
