@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+
+cat > src/pages/Sales.jsx << 'EOF'
+
+
 import { useEffect, useState } from "react";
 import { getSales } from "../services/salesApi";
 
@@ -34,7 +37,10 @@ function Sales() {
 }
 
 export default Sales;
-=======
+
+cat > src/pages/Sales.jsx << 'EOF'
+
+
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchSales, addSale, updateSale, deleteSale } from '../redux/salesSlice'
@@ -93,4 +99,10 @@ export default function Sales() {
     </div>
   )
 }
->>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
+
+EOF
+
+
+EOF
+
+

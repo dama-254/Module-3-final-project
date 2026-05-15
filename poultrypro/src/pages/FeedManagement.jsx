@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+
+cat > src/pages/FeedManagement.jsx << 'EOF'
+
+
 import { useEffect, useState } from "react";
 import { getFeeds } from "../services/feedApi";
 
@@ -34,7 +37,10 @@ function FeedManagement() {
 }
 
 export default FeedManagement;
-=======
+
+cat > src/pages/FeedManagement.jsx << 'EOF'
+
+
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchFeed, addFeed, updateFeed, deleteFeed } from '../redux/feedSlice'
@@ -92,4 +98,10 @@ export default function FeedManagement() {
     </div>
   )
 }
->>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
+
+EOF
+
+
+EOF
+
+

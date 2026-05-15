@@ -1,22 +1,51 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 const links = [
-  { to: "/dashboard", icon: "🏠", label: "Dashboard" },
+  { to: "/", icon: "🏠", label: "Dashboard" },
   { to: "/batches", icon: "🐣", label: "Batches" },
-  { to: "/feed", icon: "🌾", label: "Feed" },
+  { to: "/feeds", icon: "🌾", label: "Feeds" },
   { to: "/sales", icon: "💰", label: "Sales" },
   { to: "/expenses", icon: "💸", label: "Expenses" },
-  { to: "/vaccination", icon: "💉", label: "Vaccination" },
-]
+  { to: "/vaccinations", icon: "💉", label: "Vaccinations" },
+];
 
 export default function Sidebar() {
   return (
-    <aside style={{ width: "52px", background: "#0d1a0d", borderRight: "1px solid rgba(255,255,255,0.06)", display: "flex", flexDirection: "column", alignItems: "center", padding: "12px 0", gap: "4px", position: "sticky", top: "56px", height: "calc(100vh - 56px)" }}>
-      {links.map(({ to, icon, label }) => (
-        <NavLink key={to} to={to} title={label} style={({ isActive }) => ({ width: "36px", height: "36px", borderRadius: "10px", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "16px", textDecoration: "none", background: isActive ? "rgba(22,163,74,0.2)" : "transparent" })}>
-          {icon}
-        </NavLink>
-      ))}
+    <aside className="w-64 min-h-screen bg-slate-900 text-white p-5 flex flex-col shadow-xl">
+      <div className="mb-10 px-2">
+        <h1 className="text-2xl font-bold tracking-tight text-green-500">
+          Poultry Farm
+        </h1>
+        <p className="text-xs text-slate-400 uppercase tracking-widest mt-1">
+          Management System
+        </p>
+      </div>
+
+      <nav className="flex flex-col gap-2">
+        {links.map(({ to, icon, label }) => (
+          <NavLink
+            key={to}
+            to={to}
+            className={({ isActive }) =>
+              `flex items-center gap-3 p-3 rounded-lg transition-all duration-200 ${
+                isActive
+                  ? "bg-green-600 text-white shadow-lg shadow-green-900/20"
+                  : "hover:bg-slate-800 text-slate-400 hover:text-white"
+              }`
+            }
+          >
+            <span className="text-xl">{icon}</span>
+            <span className="font-medium">{label}</span>
+          </NavLink>
+        ))}
+      </nav>
+      
+      <div className="mt-auto pt-5 border-t border-slate-800">
+        <button className="flex items-center gap-3 p-3 w-full text-slate-400 hover:text-red-400 transition-colors">
+          <span>🚪</span>
+          <span className="font-medium">Logout</span>
+        </button>
+      </div>
     </aside>
-  )
+  );
 }

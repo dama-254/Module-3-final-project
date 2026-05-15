@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+
+cat > src/pages/Expenses.jsx << 'EOF'
+
+
 import { useEffect, useState } from "react";
 import { getExpenses } from "../services/expenseApi";
 
@@ -34,7 +37,8 @@ function Expenses() {
 }
 
 export default Expenses;
-=======
+
+cat > src/pages/Expenses.jsx << 'EOF'
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchExpenses, addExpense, updateExpense, deleteExpense } from '../redux/expenseSlice'
@@ -89,4 +93,10 @@ export default function Expenses() {
     </div>
   )
 }
->>>>>>> af2fad795637182c6fe61fcbf18e8c2e3e575839
+
+EOF
+
+
+EOF
+
+
