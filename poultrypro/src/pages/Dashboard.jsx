@@ -1,6 +1,4 @@
 
-cat > src/pages/Dashboard.jsx << 'EOF'
-
 import { useEffect, useState } from "react";
 import { getBatches } from "../services/batchApi";
 import { getSales } from "../services/salesApi";
@@ -61,9 +59,8 @@ function Dashboard() {
 }
 
 export default Dashboard;
-cat > src/pages/Dashboard.jsx << 'EOF'
- 
 
+cat > src/pages/Dashboard.jsx << 'EOF'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchBatches } from '../redux/poultrySlice'
@@ -105,10 +102,4 @@ export default function Dashboard() {
     </div>
   )
 }
-
-EOF
-
-
-EOF
-
 
