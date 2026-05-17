@@ -4,6 +4,7 @@ import feedReducer from './feedSlice'
 import salesReducer from './salesSlice'
 import expenseReducer from './expenseSlice'
 import vaccinationReducer from './vaccinationSlice'
+
 export const store = configureStore({
   reducer: {
     batches: batchReducer,
