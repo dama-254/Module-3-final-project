@@ -1,23 +1,139 @@
 {
   "batches": [
-    { "id": "1", "batchId": "B-001", "breed": "Rhode Island Red", "birds": 650, "ageWeeks": 24, "health": "Healthy", "layRate": 78, "dateAdded": "2026-01-15" },
-    { "id": "2", "batchId": "B-002", "breed": "Kenbro", "birds": 800, "ageWeeks": 18, "health": "Healthy", "layRate": 82, "dateAdded": "2026-02-10" },
-    { "id": "3", "batchId": "B-003", "breed": "Leghorn", "birds": 500, "ageWeeks": 32, "health": "Monitor", "layRate": 65, "dateAdded": "2025-11-20" }
+    {
+      "id": "1",
+      "batchId": "B-001",
+      "breed": "Rhode Island Red",
+      "birds": 650,
+      "ageWeeks": 24,
+      "health": "Healthy",
+      "layRate": 78,
+      "dateAdded": "2026-01-15"
+    },
+    {
+      "id": "2",
+      "batchId": "B-002",
+      "breed": "Kenbro",
+      "birds": 800,
+      "ageWeeks": 18,
+      "health": "Healthy",
+      "layRate": 82,
+      "dateAdded": "2026-02-10"
+    },
+    {
+      "id": "3",
+      "batchId": "B-003",
+      "breed": "Leghorn",
+      "birds": 500,
+      "ageWeeks": 32,
+      "health": "Monitor",
+      "layRate": 65,
+      "dateAdded": "2025-11-20"
+    },
+    {
+      "batchId": "D-756",
+      "breed": "silver",
+      "birds": 5,
+      "ageWeeks": 20,
+      "health": "Healthy",
+      "layRate": 0,
+      "dateAdded": "2026-05-17",
+      "id": "zxymsdT9W3w"
+    },
+    {
+      "batchId": "G-562",
+      "breed": "linse",
+      "birds": 37,
+      "ageWeeks": 49,
+      "health": "Healthy",
+      "layRate": 0,
+      "dateAdded": "2026-05-17",
+      "id": "XguYU9EzFUQ"
+    }
   ],
   "feedRecords": [
-    { "id": "1", "date": "2026-05-12", "batchId": "B-001", "feedType": "Layer mash", "quantityKg": 120, "costKsh": 4800, "supplier": "AgroFeed Ltd" },
-    { "id": "2", "date": "2026-05-12", "batchId": "B-002", "feedType": "Grower mash", "quantityKg": 125, "costKsh": 4375, "supplier": "AgroFeed Ltd" }
+    {
+      "id": "1",
+      "date": "2026-05-12",
+      "batchId": "B-001",
+      "feedType": "Layer mash",
+      "quantityKg": 120,
+      "costKsh": 4800,
+      "supplier": "AgroFeed Ltd"
+    },
+    {
+      "id": "2",
+      "date": "2026-05-12",
+      "batchId": "B-002",
+      "feedType": "Grower mash",
+      "quantityKg": 125,
+      "costKsh": 4375,
+      "supplier": "AgroFeed Ltd"
+    }
   ],
   "sales": [
-    { "id": "1", "date": "2026-05-12", "type": "Eggs", "quantity": 200, "unitPrice": 18, "totalKsh": 3600, "buyer": "Nairobi Market" },
-    { "id": "2", "date": "2026-05-11", "type": "Chicken", "quantity": 15, "unitPrice": 850, "totalKsh": 12750, "buyer": "Hotel Jacaranda" }
+    {
+      "id": "1",
+      "date": "2026-05-12",
+      "type": "Eggs",
+      "quantity": 200,
+      "unitPrice": 18,
+      "totalKsh": 3600,
+      "buyer": "Nairobi Market"
+    },
+    {
+      "id": "2",
+      "date": "2026-05-11",
+      "type": "Chicken",
+      "quantity": 15,
+      "unitPrice": 850,
+      "totalKsh": 12750,
+      "buyer": "Hotel Jacaranda"
+    }
   ],
   "expenses": [
-    { "id": "1", "date": "2026-05-10", "description": "Layer mash purchase", "category": "Feed", "amount": 9600 },
-    { "id": "2", "date": "2026-05-08", "description": "Newcastle vaccine", "category": "Medicine", "amount": 2400 }
+    {
+      "id": "1",
+      "date": "2026-05-10",
+      "description": "Layer mash purchase",
+      "category": "Feed",
+      "amount": 9600
+    },
+    {
+      "id": "2",
+      "date": "2026-05-08",
+      "description": "Newcastle vaccine",
+      "category": "Medicine",
+      "amount": 2400
+    }
   ],
   "vaccinations": [
-    { "id": "1", "date": "2026-05-01", "batchId": "B-001", "vaccineName": "Newcastle LaSota", "dosage": "1 drop/bird", "method": "Drinking water", "notes": "Routine booster" },
-    { "id": "2", "date": "2026-04-20", "batchId": "B-002", "vaccineName": "Marek's Disease", "dosage": "0.2ml/bird", "method": "Injection", "notes": "Day-old chick vaccination" }
-  ]
+    {
+      "id": "1",
+      "date": "2026-05-01",
+      "batchId": "B-001",
+      "vaccineName": "Newcastle LaSota",
+      "dosage": "1 drop/bird",
+      "method": "Drinking water",
+      "notes": "Routine booster"
+    },
+    {
+      "id": "2",
+      "date": "2026-04-20",
+      "batchId": "B-002",
+      "vaccineName": "Marek's Disease",
+      "dosage": "0.2ml/bird",
+      "method": "Injection",
+      "notes": "Day-old chick vaccination"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "Admin"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
